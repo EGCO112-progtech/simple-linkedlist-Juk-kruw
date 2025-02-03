@@ -1,8 +1,10 @@
+T = khung
+
 compile: main.c 
-	 gcc main.c -o ming
+	 gcc main.c -o $T
 
-run: ming
-	 ./ming
+run: $T
+	 ./$T
 
-clean: ming
-	 rm ming
+clean: $T
+	 rm $T
